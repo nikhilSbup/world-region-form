@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Region Selector Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>🌍 Registration Form with Country → State → City</h2>
+
+  <form id="registrationForm">
+    <label>Country:</label>
+    <input list="countries" id="country" name="country" required>
+    <datalist id="countries"></datalist>
+
+    <label>State:</label>
+    <input list="states" id="state" name="state" required disabled>
+    <datalist id="states"></datalist>
+
+    <label>City:</label>
+    <input list="cities" id="city" name="city" required disabled>
+    <datalist id="cities"></datalist>
+
+    <button type="submit">Register</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
